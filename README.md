@@ -11,7 +11,7 @@ Opus 5.5 │ 5h 72% │ Week 88%
 ## 安裝（Windows）
 
 ```powershell
-git clone https://github.com/<your-name>/claude-usage-statusline.git
+git clone https://github.com/gamer99122dev/claude-usage-statusline.git
 cd claude-usage-statusline
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 ```
