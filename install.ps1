@@ -8,7 +8,8 @@ $settings = Join-Path $dir 'settings.json'
 $cfg = $null
 if (Test-Path $settings) {
     Copy-Item $settings "$settings.bak" -Force
-    $cfg = Get-Content $settings -Raw | ConvertFrom-Json
+    # PS 5.1 reads BOM-less files with the system code page; force UTF-8 so non-ASCII values survive.
+    $cfg = Get-Content $settings -Raw -Encoding UTF8 | ConvertFrom-Json
 }
 if (-not $cfg) { $cfg = [pscustomobject]@{} }
 
