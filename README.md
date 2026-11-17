@@ -33,7 +33,7 @@ git pull
 powershell -NoProfile -ExecutionPolicy Bypass -File .\install.ps1
 ```
 
-手動安裝的話，從 [最新 release](https://github.com/gamer99122dev/claude-usage-statusline/releases/latest) 下載 `statusline.ps1` 覆蓋 `~/.claude/statusline.ps1` 即可。
+手動安裝的話，從 [最新 release](https://github.com/gamer99122dev/claude-usage-statusline/releases/latest) 下載 Source code (zip)，取出裡面的 `statusline.ps1` 覆蓋 `~/.claude/statusline.ps1` 即可。
 
 ## 發布新版（維護者）
 
