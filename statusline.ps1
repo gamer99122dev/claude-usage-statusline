@@ -1,5 +1,6 @@
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
-$j = [Console]::In.ReadToEnd() | ConvertFrom-Json
+$reader = New-Object IO.StreamReader([Console]::OpenStandardInput(), (New-Object Text.UTF8Encoding $false))
+$j = $reader.ReadToEnd() | ConvertFrom-Json
 $sep = " $([char]0x2502) "
 $out = $j.model.display_name
 $r = $j.rate_limits
